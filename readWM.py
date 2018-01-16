@@ -1,10 +1,10 @@
 # This Script is intended to read a WM file and output all empty values of specified fields
-# 11.01.2018
+# 16.01.2018
 # Robert Eber
 #
-# Reads Input files from same folder as *.txt
+# Reads Input files from same folder as *.WMI
 # Outputs in ./imported/Leerwerte_*
-# Read files are saved in ./imported/files.txt and are not read again
+# Read files are saved in ./imported.imp and are not read again
 
 import datetime
 import os
@@ -49,7 +49,7 @@ if numberoffiles == 0:
 # List of WM fields to be extracted with empty values
 # GDlist = ['GD504A','GD540B','GD504C','GD504D','GD504E','GD504F','GD504G','GD504H','GD504I','GD504J','GD504K','GD504L','GD504M','GD504N','GD504O','GD504P','GD504Q','GD504R','GD504S','GD504T','GD505J','GD505H']
 
-# List of fields relevant for DWS
+# List of fields currently relevant
 GDlist = ['GD504K','GD504E','GD504J']
 
 for filename in filenames:
